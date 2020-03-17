@@ -206,8 +206,6 @@ img {
 .charts {
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
 }
 
 .chart__container {
@@ -229,20 +227,19 @@ img {
 }
 
 .coin__title {
-  display: inline;
+  display: block;
   margin-left: 8px;
     min-width: 160px;
 text-align: left;
 }
 
 .coin__symbol {
-  display: inline;
+  display: block;
   margin-bottom: 10px;
 }
 
 .coin__logo {
-  width: 30px;
-  position: relative;
+  width: 50px;
 }
 
 .dark-mode {
