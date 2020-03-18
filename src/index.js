@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import { Router } from 'react-router-dom'
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
@@ -20,7 +21,10 @@ const App = () => {
   }, []);
   return (
     <div className="App">
+
       <Navbar coinData={coinData}/>
+
+      
       <Charts coinData={coinData} />
     </div>
   );
