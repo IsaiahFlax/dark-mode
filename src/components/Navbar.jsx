@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import useDarkMode from '../hooks/useDarkMode'
-const Navbar = () => {
+const Navbar = ({ coinData }) => {
   const [darkMode, setDarkMode] = useDarkMode(false);
   const toggleMode = e => {
     e.preventDefault();
@@ -14,6 +15,9 @@ const Navbar = () => {
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
         />
+      </div>
+      <div>
+        {coinData.map(x=>x.name)}
       </div>
     </nav>
   );

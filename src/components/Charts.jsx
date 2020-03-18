@@ -12,6 +12,7 @@ const Charts = ({ coinData }) => {
             <img src={coin.image} height="40" alt={coin.name} />
           </div>
           <Chart sparklineData={coin.sparkline_in_7d.price} />
+          {console.log(coin.name, coin)}
         </div>
       ))}
     </div>
